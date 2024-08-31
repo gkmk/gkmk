@@ -1,41 +1,52 @@
 ---
 layout: default
 ---
-<div class="flex flex-col space-y-4">
-    <div class="flex content-center justify-between items-center my-5">
+<div class="flex flex-col space-y-12">
+    <div class="flex content-center justify-between items-center">
         <div>
             <img src="/assets/img/gk.jpg" alt="gkmk" class="rounded-lg max-h-20">
         </div>
-        <h1 class="text-5xl">Hello World</h1>
+        <h2 class="text-5xl">Hello World</h2>
         <small class="float-right text-sm">version {{ site.version }}</small>
     </div>
 
-    <div>
-        <p>|--------------------------------------------------------------------------</p>
-        <p>| Senior Lead Software Engineer with 15+ years of experience.</p>
-        <p>|--------------------------------------------------------------------------</p>
+    <div class="flex flex-col md:flex-row space-y-8 md:space-y-0 md:space-x-8">
+        <article class="flex flex-col space-y-4">
+            <h1>
+                <p class="border-2 border-white-400 border-dashed p-3 text-nowrap">Senior Lead Software Engineer with 15+ years of
+                    experience.</p>
+                </h1>
+
+            <div>
+                <p>
+                    Starting with Borland C++ Builder 5 and Macromedia Flash 5 got me into
+                    programming. Back then I found that building games was always more fun to me than
+                    just playing them.
+                </p>
+                <p>
+                    Naturally I moved towards Web Development and started using PHP and JavaScript
+                    (which i still do with
+                    <a href="//laravel.com" target="_blank"
+                        class="bg-clip-text text-transparent bg-gradient-to-b from-red-500 to-red-600 text-xl underline underline-offset-4 decoration-sky-500">Laravel</a>😍).
+                </p>
+                <p>
+                    Around 2008 I worked on Facebook games and in 2010 I started working with Unity
+                    and Unreal Engine as a hobby. I did build and release 4 games using Unity and C#.
+                </p>
+                <p>
+                    Architecting solutions for scalable and reliable web applications with high availability and
+                    security in mind is what I strive for. Achieving this by being on the cutting edge of
+                    technology while staying pragmatic is part of my daily working pleasures 🤓.
+                </p>
+            </div>
+        </article>
+
+        <div class="flex flex-col space-y-4 min-w-36">
+            <div>
+                <p class="border-y-2 border-cyan-400 border-dashed p-3">Links</p>
+            </div>
+            <p><a href="//github.com/{{ site.github_username }}" target="_blank">github</a></p>
+        </div>
     </div>
 
-    <div>
-        <p>
-            Starting with Borland C++ Builder 5 and Macromedia Flash 5 got me into
-            programming. Back then I found that building games was always more fun to me than
-            just playing them.
-        </p>
-        <p>
-            Naturally I moved towards Web Development and started using PHP and JavaScript
-            (which i still do with
-            <a href="//laravel.com" target="_blank"
-                class="bg-clip-text text-transparent bg-gradient-to-b from-red-500 to-red-600 text-xl underline underline-offset-4 decoration-sky-500">Laravel</a>😍).
-        </p>
-        <p>
-            Around 2008 I worked on Facebook games and in 2010 I started working with Unity
-            and Unreal Engine as a hobby. I did build and release 4 games using Unity and C#.
-        </p>
-        <p>
-            Architecting solutions for scalable and reliable web applications with high availability and
-            security in mind is what I strive for. Achieving this by being on the cutting edge of
-            technology while staying pragmatic is part of my daily working pleasures 🤓.
-        </p>
-    </div>
 </div>
