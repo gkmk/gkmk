@@ -2,20 +2,21 @@
 layout: default
 ---
 <div class="flex flex-col space-y-12">
-    <div class="flex content-center justify-between items-center">
+    <header class="flex content-center justify-between items-center">
         <div>
             <img src="/assets/img/gk.jpg" alt="gkmk" class="rounded-lg max-h-20">
         </div>
         <h2 class="text-5xl">Hello World</h2>
         <small class="float-right text-sm">version {{ site.version }}</small>
-    </div>
+    </header>
 
-    <div class="flex flex-col md:flex-row space-y-8 md:space-y-0 md:space-x-8">
+    <main class="flex flex-col md:flex-row space-y-8 md:space-y-0 md:space-x-8">
         <article class="flex flex-col space-y-4">
             <h1>
-                <p class="border-2 border-white-400 border-dashed p-3 text-nowrap">Senior Lead Software Engineer with 15+ years of
+                <p class="border-2 border-white-400 border-dashed p-3 text-nowrap">Senior Lead Software Engineer with
+                    15+ years of
                     experience.</p>
-                </h1>
+            </h1>
 
             <div>
                 <p>
@@ -41,12 +42,15 @@ layout: default
             </div>
         </article>
 
-        <div class="flex flex-col space-y-4 min-w-36">
+        <aside class="flex flex-col space-y-4 min-w-36">
             <div>
                 <p class="border-y-2 border-cyan-400 border-dashed p-3">Links</p>
             </div>
             <p><a href="//github.com/{{ site.github_username }}" target="_blank">github</a></p>
-        </div>
-    </div>
+            <p><a href="//x.com/{{ site.twitter_username }}" target="_blank">twitter</a></p>
+            <p><a href="//www.linkedin.com/in/g-klincarski" target="_blank">linkedin</a></p>
+        </aside>
+    </main>
 
+    <footer></footer>
 </div>
