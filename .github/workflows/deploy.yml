@@ -34,18 +34,13 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-      - name: Install dependencies
-        run: npm ci
-      - name: Build project
-        run: npm run build
+      - name: Collect site files
+        run: |
+          mkdir _site
+          cp -r index.html 404.html robots.txt sitemap.xml CNAME assets _site/
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
-        with:
-          # Upload entire repository
-          path: './dist'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
